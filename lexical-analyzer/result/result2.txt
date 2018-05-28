@@ -1,0 +1,102 @@
+java -cp ./antlr-3.5.2-complete.jar:. testLexer testCode2.c
+Token: 67 #
+Token: 32 include
+Token: 76  
+Token: 44 <
+Token: 30 stdio
+Token: 17 .
+Token: 30 h
+Token: 29 >
+Token: 50 
+
+Token: 33 int
+Token: 76  
+Token: 30 main
+Token: 41 (
+Token: 62 )
+Token: 50 
+
+Token: 35 {
+Token: 50 
+
+Token: 76     
+Token: 11 /* Calculate Summation from 0 to 1023 and print it on console */
+Token: 50 
+
+Token: 76     
+Token: 33 int
+Token: 76  
+Token: 30 idx_i
+Token: 12 ,
+Token: 76  
+Token: 30 sum
+Token: 66 ;
+Token: 50 
+
+Token: 76     
+Token: 30 sum
+Token: 76  
+Token: 5 =
+Token: 76  
+Token: 13 0
+Token: 66 ;
+Token: 50 
+
+Token: 76     
+Token: 27 for
+Token: 41 (
+Token: 30 idx_i
+Token: 76  
+Token: 5 =
+Token: 76  
+Token: 13 0
+Token: 66 ;
+Token: 76  
+Token: 30 idx_i
+Token: 76  
+Token: 37 <=
+Token: 76  
+Token: 13 1024
+Token: 66 ;
+Token: 76  
+Token: 30 idx_i
+Token: 58 ++
+Token: 62 )
+Token: 50 
+
+Token: 76     
+Token: 35 {
+Token: 50 
+
+Token: 76         
+Token: 30 sum
+Token: 76  
+Token: 56 +=
+Token: 76  
+Token: 30 idx_i
+Token: 66 ;
+Token: 50 
+
+Token: 76     
+Token: 60 }
+Token: 50 
+
+Token: 76     
+Token: 59 printf
+Token: 41 (
+Token: 69 "%d\n"
+Token: 12 ,
+Token: 76  
+Token: 30 sum
+Token: 62 )
+Token: 66 ;
+Token: 50 
+
+Token: 76     
+Token: 61 return
+Token: 76  
+Token: 13 0
+Token: 66 ;
+Token: 50 
+
+Token: 60 }
