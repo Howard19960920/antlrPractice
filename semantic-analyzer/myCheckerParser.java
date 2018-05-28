@@ -1,4 +1,4 @@
-// $ANTLR 3.5.2 myChecker.g 2018-05-28 17:28:28
+// $ANTLR 3.5.2 myChecker.g 2018-05-28 22:36:34
 
     // import packages here.
     import java.util.HashMap;
@@ -137,7 +137,7 @@ public class myCheckerParser extends Parser {
 	        6 => longlong,
 	        7 => double,
 	        8 => struct,
-	        -1 => doesn't exsit,
+	        -1 => doesn't exist,
 	        -2 => error detected
 	      */
 
@@ -692,7 +692,7 @@ public class myCheckerParser extends Parser {
 					if (state.failed) return attr_type;
 					if ( state.backtracking==0 ) { 		
 					      if ((a!=null?((myCheckerParser.addexprs_return)a).attr_type:0) != (b!=null?((myCheckerParser.addexprs_return)b).attr_type:0)) {
-					          System.out.println("Type Error: " + (a!=null?(a.start):null).getLine() + ": types of the operands in the compare-expressions are different");
+					          System.out.println("Type Error: " + (a!=null?(a.start):null).getLine() + ": types of the operands in the expressions are different");
 					            attr_type = -2;
 					      }
 					    }

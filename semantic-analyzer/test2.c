@@ -1,17 +1,10 @@
+// 測試等號左右兩邊型態不同的賦值行為
 #include <stdio.h>
 #include <stdlib.h>
-// 測錯可以把 return x+y; 的分號拔掉，或者讓 function 不 return
-int addsum(int x, int y)
-{
-    return x+y;
-}
 
 int main()
 {
-    int x, y;
-    //  現在一行只能初始化一個變數
-    x = 5;
-    y = 10;
-    addsum(x, y);
+    int x;
+    x = 0.666
     return 0;
 }

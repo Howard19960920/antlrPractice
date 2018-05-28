@@ -118,7 +118,7 @@ public class myCheckerLexer extends Lexer {
 	        6 => longlong,
 	        7 => double,
 	        8 => struct,
-	        -1 => doesn't exsit,
+	        -1 => doesn't exist,
 	        -2 => error detected
 	      */
 

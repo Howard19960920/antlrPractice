@@ -28,7 +28,7 @@ options {
         6 => longlong,
         7 => double,
         8 => struct,
-        -1 => doesn't exsit,
+        -1 => doesn't exist,
         -2 => error detected
       */
 }
@@ -160,7 +160,7 @@ operations returns [int attr_type]
   ) b = addexprs 
     { 		
       if ($a.attr_type != $b.attr_type) {
-          System.out.println("Type Error: " + $a.start.getLine() + ": types of the operands in the compare-expressions are different");
+          System.out.println("Type Error: " + $a.start.getLine() + ": types of the operands in the expressions are different");
             $attr_type = -2;
       }
     }

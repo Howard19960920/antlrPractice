@@ -123,7 +123,7 @@ public class myCheckerParser extends Parser {
 	        6 => longlong,
 	        7 => double,
 	        8 => struct,
-	        -1 => doesn't exsit,
+	        -1 => doesn't exist,
 	        -2 => error detected
 	      */
 
@@ -660,7 +660,7 @@ public class myCheckerParser extends Parser {
 				((OperationsContext)_localctx).b = addexprs();
 				 		
 				      if (((OperationsContext)_localctx).a.attr_type != ((OperationsContext)_localctx).b.attr_type) {
-				          System.out.println("Type Error: " + (((OperationsContext)_localctx).a!=null?(((OperationsContext)_localctx).a.start):null).getLine() + ": types of the operands in the compare-expressions are different");
+				          System.out.println("Type Error: " + (((OperationsContext)_localctx).a!=null?(((OperationsContext)_localctx).a.start):null).getLine() + ": types of the operands in the expressions are different");
 				            ((OperationsContext)_localctx).attr_type =  -2;
 				      }
 				    
