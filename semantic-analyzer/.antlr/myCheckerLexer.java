@@ -13,7 +13,7 @@ import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
-public class hw3Lexer extends Lexer {
+public class myCheckerLexer extends Lexer {
 	static { RuntimeMetaData.checkVersion("4.7.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
@@ -108,29 +108,22 @@ public class hw3Lexer extends Lexer {
 	    boolean TRACEON = false;
 	    HashMap<String,Integer> symtab = new HashMap<String,Integer>();
 
-	    /*public enum TypeInfo {
-	        Integer,
-	        Float,
-	        Char,
-	        Void,
-	        Unknown,
-	        No_Exist,
-	        Error
-	      }*/
-	        
 	      int attr_type;
-
 	      /*attr_type:
 	        1 => integer,
 	        2 => float,
 	        3 => char,
 	        4 => void,
-	        -1 => do not exist,
-	        -2 => error
+	        5 => short,
+	        6 => longlong,
+	        7 => double,
+	        8 => struct,
+	        -1 => doesn't exsit,
+	        -2 => error detected
 	      */
 
 
-	public hw3Lexer(CharStream input) {
+	public myCheckerLexer(CharStream input) {
 		super(input);
 		_interp = new LexerATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
